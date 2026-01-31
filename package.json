@@ -1,0 +1,17 @@
+{
+  "name": "poker-webapp",
+  "version": "1.0.0",
+  "description": "Multiplayer Texas Hold'em Poker Web Application",
+  "type": "module",
+  "scripts": {
+    "install-all": "npm install && cd server && npm install && cd ../client && npm install",
+    "generate-cards": "node scripts/download-cards.js",
+    "server": "cd server && npm start",
+    "client": "cd client && npm run dev",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "setup": "npm run install-all && npm run generate-cards"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="140" height="200" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <pattern id="backPattern" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse">
+      <rect width="20" height="20" fill="#1a237e"/>
+      <circle cx="10" cy="10" r="8" fill="#283593" opacity="0.3"/>
+    </pattern>
+  </defs>
+  <rect width="140" height="200" fill="url(#backPattern)" stroke="#0d47a1" stroke-width="2" rx="8"/>
+  <text x="70" y="100" font-family="Arial, sans-serif" font-size="48" fill="#ffffff" text-anchor="middle" dominant-baseline="middle" opacity="0.8">♠</text>
+</svg>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="140" height="200" xmlns="http://www.w3.org/2000/svg">
+  <rect width="140" height="200" fill="white" stroke="#d32f2f" stroke-width="2" rx="8"/>
+  <text x="10" y="30" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="#d32f2f">8</text>
+  <text x="10" y="55" font-family="Arial, sans-serif" font-size="32" fill="#d32f2f">♦</text>
+  <text x="130" y="190" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="#d32f2f" text-anchor="end">8</text>
+  <text x="130" y="165" font-family="Arial, sans-serif" font-size="32" fill="#d32f2f" text-anchor="end">♦</text>
+  <text x="70" y="110" font-family="Arial, sans-serif" font-size="64" fill="#d32f2f" text-anchor="middle" dominant-baseline="middle">♦</text>
+</svg>
