@@ -1,0 +1,33 @@
+services:
+  # Backend Service
+  - type: web
+    name: poker-webapp-server
+    runtime: node
+    region: oregon
+    plan: free
+    buildCommand: cd server && npm install
+    startCommand: cd server && npm start
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: PORT
+        value: 3001
+    healthCheckPath: /
+
+  # Frontend Service (Static Site)
+  - type: web
+    name: poker-webapp-client
+    runtime: static
+    region: oregon
+    plan: free
+    buildCommand: cd client && npm install && npm run build
+    staticPublishPath: client/dist
+    envVars:
+      - key: VITE_SERVER_URL
+        # This will be the URL of your backend service
+        # Update this after backend is deployed
+        value: https://poker-webapp-server.onrender.com
+    routes:
+      - type: rewrite
+        source: /*
+        destination: /index.html
