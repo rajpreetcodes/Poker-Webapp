@@ -14,6 +14,15 @@ const io = new Server(httpServer, {
   }
 });
 
+// Health check endpoint for Render
+app.get('/', (req, res) => {
+  res.status(200).send('Poker Server is running');
+});
+
+app.get('/health', (req, res) => {
+  res.status(200).json({ status: 'ok', timestamp: new Date().toISOString() });
+});
+
 const rooms = {}; // roomId -> game state
 const turnTimers = {}; // roomId -> timerId
 
